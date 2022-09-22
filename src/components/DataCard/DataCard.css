@@ -1,0 +1,36 @@
+.card-data{
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+.card-data .data_icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.data_icon img{
+    width: 14px;
+}
+.bg-yellow{
+    background-color:  var(--yellow);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.bg-green{
+    background-color: var(--primary);
+}
+
+.data_text{
+    font: var(--body1-regular);
+    font-size: 12px;
+    margin-left: 8px;
+    color: var(--black-1);
+}
