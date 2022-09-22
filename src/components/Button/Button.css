@@ -1,0 +1,14 @@
+.button{
+    width: 143px;
+    height: 48px;
+    background: #A7DC50;
+    border: none;
+    border-radius: 50px;
+
+    font: var(--button);
+    text-transform: uppercase;
+
+    color: #103611;
+    cursor: pointer;
+
+}

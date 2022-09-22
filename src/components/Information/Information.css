@@ -1,0 +1,13 @@
+.info{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px .5rem;
+}
+.info .info_icon{
+    margin-right: .5rem;
+    width: 2rem;
+}
+.info_text{
+    color: var(--white);
+}

@@ -1,0 +1,30 @@
+.modal-loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    gap: 24px;
+
+    position: absolute;
+    width: 588px;
+    height: 419px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    background-color: var(--white);
+    border-radius: 40px;
+}
+.modal-loading img{
+    width: 239.02px;
+    height: 239.02px;
+
+}
+
+.modal-loading p{
+    font: var( --subtitle1);
+    color: var(--black-1);
+}

@@ -1,0 +1,27 @@
+.modal{
+    width: 588px;
+    height: 419px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    gap: 24px;
+    position: relative;
+    border-radius: 40px;
+
+}
+
+.modal .modal_logo{
+    width: 246.34px;
+    height: 80px;
+}
+
+.modal .modal_text{
+    width: 428px;
+    height: 24px;
+    font: var(--subtitle1);
+    text-align: center;
+    color: var(--black-1);
+}
