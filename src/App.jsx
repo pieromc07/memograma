@@ -10,7 +10,7 @@ import './App.css'
 const App = () => {
 
 	const [cards, setCards] = useState([])
-	const [lifes, setLifes] = useState(1)
+	const [lifes, setLifes] = useState(3)
 	const [reward, setReward] = useState(0)
 	const [modalInfo, setModalInfo] = useState({})
 	const [firstChoice, setFirstChoice] = useState(null)
@@ -125,7 +125,7 @@ const App = () => {
 		if (restart) {
 			setRestartGame(false)
 			setCards([])
-			setLifes(5)
+			setLifes(3)
 			setReward(0)
 			setModalInfo({})
 			setFirstChoice(null)
