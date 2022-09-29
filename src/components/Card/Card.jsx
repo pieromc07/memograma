@@ -1,50 +1,38 @@
 import React, { useState } from 'react'
 
-import back from '../../assets/images/back.png'
+import bgBack from '../../assets/images/back.png'
 import gender from '../../assets/icons/Gender.svg'
 import status from '../../assets/icons/Status.svg'
 import origin from '../../assets/icons/Origin.svg'
 import { DataCard } from '../DataCard/DataCard'
 
 import './Card.css'
-export const Card = () => {
+export const Card = ({character, handleChoice, flipped}) => {
 
-    const [flip, setFlip] = useState('back')
-
-    const handleFlip = () =>{
-        const front = document.querySelector('.face-front')
-        const back = document.querySelector('.face-back')
-        if(flip == 'back'){
-            front.classList.add('front-active')
-            back.classList.add('back-desactive');
-            setFlip('front')
-        }else{
-            front.classList.remove('front-active')
-            back.classList.remove('back-desactive');
-            setFlip('back')
-        }
+    const handleClick = () => {
+        handleChoice(character)
     }
 
   return (
-    <div className='card' onClick={handleFlip}>
-            <div className='face  face-back'>
-                <img src={back} alt="img back" />
+    <div className={flipped ? 'card flip' : 'card'} >
+            <div className='face face-back' onClick={handleClick}>
+                <img src={bgBack} alt="img back" />
             </div>
-            <div className='face  face-front'>
+            <div className='face face-front'>
                 <div className='face-front_post'>
-                    <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="image card" />
+                    <img src={character.image} alt="image card" />
                     <div className='species'>
-                        <p>human</p>
+                        <p>{character.species}</p>
                     </div>
                 </div>
                 <div className='face-front_info'>
-                    <p className='info_name'>Morty Smith</p>
+                    <p className='info_name'>{character.name}</p>
                     <div className='info_data'>
-                        <DataCard icon={gender} type={'gender'} text={'Male'}/>
-                        <DataCard icon={status} type={'status'} text={'Alive'}/>
+                        <DataCard icon={gender} type={'gender'} text={character.gender}/>
+                        <DataCard icon={status} type={'status'} text={character.status}/>
                     </div>
                     <div className='info_data'>
-                        <DataCard icon={origin} type={'origin'} text={'Dimension C-137'}/>
+                        <DataCard icon={origin} type={'origin'} text={character.origin}/>
                     </div>
 
                 </div>

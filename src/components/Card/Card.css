@@ -84,10 +84,10 @@
     align-items: center;
 }
 
-.face-front.front-active{
-    transform: perspective(300px) rotateY(0deg);
+.card.flip .face-front{
+    transform: perspective(300px) rotateY(360deg);
 }
 
-.face-back.back-desactive{
+.card.flip .face-back{
     transform: perspective(300px) rotateY(180deg);
 }
