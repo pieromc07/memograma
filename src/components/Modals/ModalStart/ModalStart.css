@@ -1,3 +1,15 @@
+#modal-launch{
+    transition: display linear 1s;
+}
+.rectangle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
 .modal-start{
     position: absolute;
     width: 588px;
@@ -14,7 +26,7 @@
     border-radius: 40px;
 }
 
-.modal-start .modal-start_content{
+.modal-start .modal-start-content{
     width: 100%;
     height: 100px;
     display: flex;
@@ -22,6 +34,20 @@
     align-items: center;
     padding: 1.5rem;
 }
-.modal-start_content img{
+.modal-start-content img{
     height: 100%;
+}
+
+.modal-start-content .modal-start-content_button{
+    width: 143px;
+    height: 48px;
+    background: #A7DC50;
+    border: none;
+    border-radius: 50px;
+
+    font: var(--button);
+    text-transform: uppercase;
+
+    color: #103611;
+    cursor: pointer;
 }

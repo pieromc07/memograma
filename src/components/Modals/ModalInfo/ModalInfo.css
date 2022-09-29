@@ -1,4 +1,4 @@
-.modal{
+.modalInfo{
     width: 588px;
     height: 419px;
     background-color: var(--white);
@@ -10,18 +10,45 @@
     gap: 24px;
     position: relative;
     border-radius: 40px;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
 }
 
-.modal .modal_logo{
+.modalInfo .modalInfo_logo{
     width: 246.34px;
     height: 80px;
 }
 
-.modal .modal_text{
+.modalInfo .modalInfo_text{
     width: 428px;
     height: 24px;
     font: var(--subtitle1);
     text-align: center;
     color: var(--black-1);
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+.modalInfo .modalInfo_button{
+    width: 143px;
+    height: 48px;
+    background: #A7DC50;
+    border: none;
+    border-radius: 50px;
+
+    font: var(--button);
+    text-transform: uppercase;
+
+    color: #103611;
+    cursor: pointer;
 }

@@ -17,6 +17,7 @@
 
     background-color: var(--white);
     border-radius: 40px;
+    z-index: 1;
 }
 .modal-loading img{
     width: 239.02px;
@@ -24,7 +25,22 @@
 
 }
 
-.modal-loading p{
+.modal-loading .modal-loading_text{
     font: var( --subtitle1);
     color: var(--black-1);
+    animation: load 1s ease-in-out 1s infinite normal none;
+}
+
+@keyframes load {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
